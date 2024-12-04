@@ -20,5 +20,22 @@ button{
     height: 60px;
 }
 
+.number {
+    background-color: lightgray;
+    color: black;
+}
 
+.op {
+    background-color: orange;
+    color: white;
+}
 
+.output{
+    background-color: rgb(52, 45, 45);
+    color: white;
+}
+
+.clear{
+    background-color: gray;
+    color: white;
+}
