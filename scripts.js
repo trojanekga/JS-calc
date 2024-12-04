@@ -1,6 +1,7 @@
 let a = null;
 let b = null;
 let op = null;
+let firstNum = true;
 
 function addition (a, b){
     return a+b;
@@ -56,14 +57,34 @@ clear.addEventListener("click", function() {
 });
 
 zero.addEventListener("click", function() {
-    console.log("Zero");
-    output.value = (output.value + "0");
+    if (firstNum = true){
+        console.log("Zero");
+        output.value = (output.value + "0");
+    }
+    else {
+        output.value = (output.value + "0");
+    }
 });
 one.addEventListener("click", function() {
-    console.log("One");
-    output.value = (output.value + "1");
+    if (firstNum = true){
+        console.log("One");
+        output.value = (output.value + "1");
+    }
+    else {
+        output.value = (output.value + "1");
+    }
+
 });
+
+add.addEventListener("click", function() {
+    firstNum = false;
+    a = a;
+    output.value = (output.value + "+");
+})
 
 function clearResult (){
     output.value = "";
+    a = null;
+    b = null;
+    firstNum = true;
 }
