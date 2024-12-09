@@ -61,14 +61,34 @@ clear.addEventListener("click", function() {
 });
 
 zero.addEventListener("click", function() {
-    if (firstNum = true){
-        console.log("Zero");
-        output.value = (output.value + "0");
+    if (firstNum == true){
+        if (firstNumber == null){
+            firstNumber = 0;
+            console.log(firstNumber);
+            output.value = (output.value + "0");
+        }
+        else{
+                
+                firstNumber = firstNumber + "0";
+                console.log(firstNumber);
+                output.value = (output.value + "0");
+            }
     }
     else {
-        output.value = (output.value + "0");
+        if (secondNumber == null){
+            secondNumber = 0;
+            console.log(secondNumber);
+            output.value = (output.value + "0");
+        }
+        else{
+            secondNumber = secondNumber + "0";
+            console.log(secondNumber);
+            output.value = (output.value + "0");
+        }
     }
+
 });
+
 one.addEventListener("click", function() {
     if (firstNum == true){
         if (firstNumber == null){
@@ -98,6 +118,64 @@ one.addEventListener("click", function() {
 
 });
 
+two.addEventListener("click", function() {
+    if (firstNum == true){
+        if (firstNumber == null){
+            firstNumber = 2;
+            console.log(firstNumber);
+            output.value = (output.value + "2");
+        }
+        else{
+                
+                firstNumber = firstNumber + "2";
+                console.log(firstNumber);
+                output.value = (output.value + "2");
+            }
+    }
+    else {
+        if (secondNumber == null){
+            secondNumber = 2;
+            console.log(secondNumber);
+            output.value = (output.value + "2");
+        }
+        else{
+            secondNumber = secondNumber + "2";
+            console.log(secondNumber);
+            output.value = (output.value + "2");
+        }
+    }
+
+});
+
+three.addEventListener("click", function() {
+    if (firstNum == true){
+        if (firstNumber == null){
+            firstNumber = 3;
+            console.log(firstNumber);
+            output.value = (output.value + "3");
+        }
+        else{
+                
+                firstNumber = firstNumber + "3";
+                console.log(firstNumber);
+                output.value = (output.value + "3");
+            }
+    }
+    else {
+        if (secondNumber == null){
+            secondNumber = 3;
+            console.log(secondNumber);
+            output.value = (output.value + "3");
+        }
+        else{
+            secondNumber = secondNumber + "3";
+            console.log(secondNumber);
+            output.value = (output.value + "3");
+        }
+    }
+
+});
+
 add.addEventListener("click", function() {
     firstNum = false;
     output.value = (output.value + "+");
@@ -108,6 +186,19 @@ minus.addEventListener("click", function() {
     firstNum = false;
     output.value = (output.value + "-");
     operation = "-";
+})
+
+times.addEventListener("click", function() {
+    firstNum = false;
+    output.value = (output.value + "*");
+    operation = "*";
+})
+
+divide.addEventListener("click", function() {
+
+    firstNum = false;
+    output.value = (output.value + "/");
+    operation = "/";
 })
 
 equals.addEventListener("click", function(){
@@ -121,11 +212,25 @@ equals.addEventListener("click", function(){
         output.value = (output.value + "=" + total);
     }
 
+    else if (operation == "*"){
+        total = parseInt(firstNumber) * parseInt(secondNumber);
+        output.value = (output.value + "=" + total);
+    }
+    else if (operation == "/"){
+        if (parseInt(secondNumber) == 0){
+            alert("Cannot divide by zero!");
+        }
+        else{
+        total = parseInt(firstNumber) / parseInt(secondNumber);
+        output.value = (output.value + "=" + total);
+        }
+    }
+
 })
 
 function clearResult (){
     output.value = "";
-    a = null;
-    b = null;
+    firstNumber = null;
+    secondNumber = null;
     firstNum = true;
 }
