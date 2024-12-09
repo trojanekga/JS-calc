@@ -176,29 +176,222 @@ three.addEventListener("click", function() {
 
 });
 
+four.addEventListener("click", function() {
+    if (firstNum == true){
+        if (firstNumber == null){
+            firstNumber = 4;
+            console.log(firstNumber);
+            output.value = (output.value + "4");
+        }
+        else{
+                
+                firstNumber = firstNumber + "4";
+                console.log(firstNumber);
+                output.value = (output.value + "4");
+            }
+    }
+    else {
+        if (secondNumber == null){
+            secondNumber = 4;
+            console.log(secondNumber);
+            output.value = (output.value + "4");
+        }
+        else{
+            secondNumber = secondNumber + "4";
+            console.log(secondNumber);
+            output.value = (output.value + "4");
+        }
+    }
+
+});
+
+five.addEventListener("click", function() {
+    if (firstNum == true){
+        if (firstNumber == null){
+            firstNumber = 5;
+            console.log(firstNumber);
+            output.value = (output.value + "5");
+        }
+        else{
+                
+                firstNumber = firstNumber + "5";
+                console.log(firstNumber);
+                output.value = (output.value + "5");
+            }
+    }
+    else {
+        if (secondNumber == null){
+            secondNumber = 5;
+            console.log(secondNumber);
+            output.value = (output.value + "5");
+        }
+        else{
+            secondNumber = secondNumber + "5";
+            console.log(secondNumber);
+            output.value = (output.value + "5");
+        }
+    }
+
+});
+
+six.addEventListener("click", function() {
+    if (firstNum == true){
+        if (firstNumber == null){
+            firstNumber = 6;
+            console.log(firstNumber);
+            output.value = (output.value + "6");
+        }
+        else{
+                
+                firstNumber = firstNumber + "6";
+                console.log(firstNumber);
+                output.value = (output.value + "6");
+            }
+    }
+    else {
+        if (secondNumber == null){
+            secondNumber = 6;
+            console.log(secondNumber);
+            output.value = (output.value + "6");
+        }
+        else{
+            secondNumber = secondNumber + "6";
+            console.log(secondNumber);
+            output.value = (output.value + "6");
+        }
+    }
+
+});
+
+seven.addEventListener("click", function() {
+    if (firstNum == true){
+        if (firstNumber == null){
+            firstNumber = 7;
+            console.log(firstNumber);
+            output.value = (output.value + "7");
+        }
+        else{
+                
+                firstNumber = firstNumber + "7";
+                console.log(firstNumber);
+                output.value = (output.value + "7");
+            }
+    }
+    else {
+        if (secondNumber == null){
+            secondNumber = 7;
+            console.log(secondNumber);
+            output.value = (output.value + "7");
+        }
+        else{
+            secondNumber = secondNumber + "7";
+            console.log(secondNumber);
+            output.value = (output.value + "7");
+        }
+    }
+
+});
+
+eight.addEventListener("click", function() {
+    if (firstNum == true){
+        if (firstNumber == null){
+            firstNumber = 8;
+            console.log(firstNumber);
+            output.value = (output.value + "8");
+        }
+        else{
+                
+                firstNumber = firstNumber + "8";
+                console.log(firstNumber);
+                output.value = (output.value + "8");
+            }
+    }
+    else {
+        if (secondNumber == null){
+            secondNumber = 8;
+            console.log(secondNumber);
+            output.value = (output.value + "8");
+        }
+        else{
+            secondNumber = secondNumber + "8";
+            console.log(secondNumber);
+            output.value = (output.value + "8");
+        }
+    }
+
+});
+
+nine.addEventListener("click", function() {
+    if (firstNum == true){
+        if (firstNumber == null){
+            firstNumber = 9;
+            console.log(firstNumber);
+            output.value = (output.value + "9");
+        }
+        else{
+                
+                firstNumber = firstNumber + "9";
+                console.log(firstNumber);
+                output.value = (output.value + "9");
+            }
+    }
+    else {
+        if (secondNumber == null){
+            secondNumber = 9;
+            console.log(secondNumber);
+            output.value = (output.value + "9");
+        }
+        else{
+            secondNumber = secondNumber + "9";
+            console.log(secondNumber);
+            output.value = (output.value + "9");
+        }
+    }
+
+});
+
 add.addEventListener("click", function() {
+    if (operation != undefined){
+        alert("Please only do one operation at time");
+    }
+    else {
     firstNum = false;
     output.value = (output.value + "+");
     operation = "+";
+    }
 })
 
 minus.addEventListener("click", function() {
+    if (operation != undefined){
+        alert("Please only do one operation at time");
+    }
+    else {
     firstNum = false;
     output.value = (output.value + "-");
     operation = "-";
+    }
 })
 
 times.addEventListener("click", function() {
+    if (operation != undefined){
+        alert("Please only do one operation at time");
+    }
+    else {
     firstNum = false;
     output.value = (output.value + "*");
     operation = "*";
+    }
 })
 
 divide.addEventListener("click", function() {
-
+    if (operation != undefined){
+        alert("Please only do one operation at time");
+    }
+    else {
     firstNum = false;
     output.value = (output.value + "/");
     operation = "/";
+    }
 })
 
 equals.addEventListener("click", function(){
