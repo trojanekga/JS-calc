@@ -395,7 +395,10 @@ divide.addEventListener("click", function() {
 })
 
 equals.addEventListener("click", function(){
-    if (operation == "+"){
+    if (operation == undefined){
+        alert("You need to include an operation to calculate");
+    }
+    else if (operation == "+"){
         total = parseInt(firstNumber) + parseInt(secondNumber);
         output.value = (output.value + "=" + total);
     }
